@@ -3,7 +3,7 @@ const btnVerificar = document.querySelector("#btnVerificar")
 const resultado = document.querySelector("#resultado")
 
 
-const elementosArray = [20, 18, 18, 20, 19, 14, 20]
+const elementosArray = [20, 18, 18, 22, 19, 14, 20]
 // const elementosArray = ["HTML", "CSS", "JAVASCRIPT"] também pode usar com string
 
 array.innerHTML = "[" + elementosArray + "]"
