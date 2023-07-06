@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    width: 200px;
+    height: 20px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+
+    width: 210px;
+    height: 25px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+
+    cursor: pointer;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 15px;
+}
+.caixa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid #000;
+    width: 210px;
+    height: 600px;
+}
+.pessoa {
+    border: 2px solid #000;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-top: 4px;
+    padding: 5px;
+    border-radius: 5px;
+}
