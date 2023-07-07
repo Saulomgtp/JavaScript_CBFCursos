@@ -1,0 +1,30 @@
+#relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #444;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+}
+#texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: #444;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
