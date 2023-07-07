@@ -83,8 +83,15 @@ bC.addEventListener("click", (evt) => {
 
 const aba = document.querySelector("#aba")
 const caixaGeral = document.querySelector("#caixageral")
+const imgDireita = document.querySelector("#imgdireita")
 
 aba.addEventListener("click", (evt) => {
     caixaGeral.classList.toggle("exibir")
+    if (caixaGeral.classList.contains("exibir")) {
+        imgDireita.setAttribute("src", "arrow_left_FILL0_wght400_GRAD0_opsz48.svg")
+    } else {
+        imgDireita.setAttribute("src", "arrow_right_FILL0_wght400_GRAD0_opsz48.svg")
+    }
+
 })
 
