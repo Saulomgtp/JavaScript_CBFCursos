@@ -21,6 +21,7 @@
     font-size: large;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 body {
     display: flex;
@@ -28,3 +29,54 @@ body {
     align-items: center;
     flex-direction: column;
 }
+#caixaPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #706f6f solid;
+    width: 330px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+#caixamenor {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    width: 330px;
+    flex-direction: column;
+}
+input{
+    width: 270px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: larger;
+}
+#botoes {
+    margin-top: 4px;
+}
+.botao{
+    width: 90px;
+    height: 35px;
+    cursor: pointer;   
+    background-color: rgb(3, 90, 61);
+    border-radius: 5px;
+    color: #f0f0f0;
+    font-size: larger;
+}
+@keyframes alarme{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.alarme {
+    background-color:#ce300c !important;
+    color:#fff;
+    -webkit-animation: alarme .9s linear infinite;
+    -moz-animation: alarme .9s linear infinite;
+    -ms-animation: alarme .9s linear infinite;
+    -o-animation: alarme .9s linear infinite;
+    animation: alarme .9s linear infinite;
+ }
