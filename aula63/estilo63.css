@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+#inputNome {
+    width: 200px;
+    height: 20px;
+}
+#inputPortas {
+    width: 200px;
+    height: 20px;
+}
+#inputBlindagem {
+    width: 200px;
+    height: 20px;
+}
+#inputMunicao {
+    width: 200px;
+    height: 20px;   
+}
+#militar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+#normal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #025;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#caixaCarros {
+    border: 4px solid black;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 4px;
+    height: 500px;
+    width: 500px;
+} 
+.carro {
+    border: 2px solid black;
+    padding: 2px;
+    width: 150px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.botao {
+    width: 100px;
+    height: 30px;
+    background-color: #025;
+}
+    
+  
