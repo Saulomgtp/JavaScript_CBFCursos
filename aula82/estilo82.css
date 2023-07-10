@@ -1,0 +1,62 @@
+
+
+#caixaComeco {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border: 4px black solid;
+    border-radius: 5px;
+    height: 140px;
+    margin-bottom: 3px;
+}
+.caixasMenor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px gray solid;
+    width: 510px;
+    border-radius: 5px;
+    height: 130px;
+    font-size: larger;
+}
+input {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    margin: 5px;
+}
+button {
+    background-color: rgb(1, 1, 138);
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#btnAdicionar {
+    height: 35px;
+    width: 150px;
+    font-size: larger;
+}
+button:hover {
+    background-color: rgb(68, 68, 223);
+}
+#btnRemover {
+    height: 70px;
+    width: 300px;
+    font-size: xx-large;
+}
+#quantidadeBolas {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    margin: 5px;
+    border: 2px solid black;
+}
+#caixaBolas {
+    height: 25px;
+    border: 4px black solid;
+    border-radius: 5px;
+    height: 655px
+}
