@@ -20,7 +20,6 @@ btnDireita.addEventListener("click", (evt) => {
         clearInterval(intervalo);
         carro.classList.add("girar");
         setTimeout(() => {
-            carro.style.right = tamMax + "px";
             carro.classList.remove("girar");
         }, 1000);
     }
@@ -37,7 +36,6 @@ btnEsquerda.addEventListener("click", (evt) => {
             clearInterval(intervalo);
             carro.classList.add("girar");
             setTimeout(() => {
-                carro.style.right = tamMax + "px";
                 carro.classList.remove("girar");
             }, 1000);
         }     
@@ -55,7 +53,6 @@ cima.addEventListener("click", (evt) => {
             clearInterval(intervalo);
             carro.classList.add("girar");
             setTimeout(() => {
-                carro.style.right = tamMax + "px";
                 carro.classList.remove("girar");
             }, 1000);
         }
@@ -73,7 +70,6 @@ baixo.addEventListener("click", (evt) => {
             clearInterval(intervalo);
             carro.classList.add("girar");
             setTimeout(() => {
-                carro.style.right = tamMax + "px";
                 carro.classList.remove("girar");
             }, 1000);
         }
