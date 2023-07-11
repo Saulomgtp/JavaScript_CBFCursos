@@ -4,14 +4,26 @@ const carro = document.querySelector("#quadrado1")
 const parar = document.querySelector("#parar")
 const cima = document.querySelector("#cima")
 const baixo = document.querySelector("#baixo")
-intervalo = setInterval(() => {})
+
+intervalo = setInterval(() => {}, 2)
+let tamMax = window.innerWidth - 120
+let giros = 0;
 
 btnDireita.addEventListener("click", (evt) => {
     clearInterval(intervalo)
     intervalo = setInterval(() => {
     const localAtual = parseInt(carro.style.right) || 0
     const novoLocal = localAtual - 1
-    carro.style.right = novoLocal + "px"
+    if (novoLocal >= -tamMax) {
+        carro.style.right = novoLocal + "px"
+    } else {
+        clearInterval(intervalo);
+        carro.classList.add("girar");
+        setTimeout(() => {
+            carro.style.right = tamMax + "px";
+            carro.classList.remove("girar");
+        }, 1000);
+    }
     }, 2)
 })
 btnEsquerda.addEventListener("click", (evt) => {
@@ -19,8 +31,17 @@ btnEsquerda.addEventListener("click", (evt) => {
     intervalo = setInterval(() => {
         const localAtual = parseInt(carro.style.right) || 0
         const novoLocal = localAtual + 1
-        carro.style.right = novoLocal + "px"
-        }, 2)
+        if (novoLocal <= 0) {
+            carro.style.right = novoLocal + "px"
+        } else {
+            clearInterval(intervalo);
+            carro.classList.add("girar");
+            setTimeout(() => {
+                carro.style.right = tamMax + "px";
+                carro.classList.remove("girar");
+            }, 1000);
+        }     
+    }, 2)
 })
 
 cima.addEventListener("click", (evt) => {
@@ -28,8 +49,17 @@ cima.addEventListener("click", (evt) => {
     intervalo = setInterval(() => {
         const localAtual = parseInt(carro.style.top) || 0
         const novoLocal = localAtual - 1
-        carro.style.top = novoLocal + "px"
-        }, 2)
+        if (novoLocal >= 0) {  
+            carro.style.top = novoLocal + "px"
+        } else {
+            clearInterval(intervalo);
+            carro.classList.add("girar");
+            setTimeout(() => {
+                carro.style.right = tamMax + "px";
+                carro.classList.remove("girar");
+            }, 1000);
+        }
+    }, 2)
 })
 
 baixo.addEventListener("click", (evt) => {
@@ -37,7 +67,16 @@ baixo.addEventListener("click", (evt) => {
     intervalo = setInterval(() => {
         const localAtual = parseInt(carro.style.top) || 0
         const novoLocal = localAtual + 1
-        carro.style.top = novoLocal + "px"
+        if (novoLocal < tamMax) { 
+            carro.style.top = novoLocal + "px"
+        } else {
+            clearInterval(intervalo);
+            carro.classList.add("girar");
+            setTimeout(() => {
+                carro.style.right = tamMax + "px";
+                carro.classList.remove("girar");
+            }, 1000);
+        }
         }, 2)
 })
     
@@ -45,4 +84,18 @@ baixo.addEventListener("click", (evt) => {
 parar.addEventListener("click", (evt) => {
     clearInterval(intervalo)
 })
+
+window.addEventListener("resize", () => {
+    tamMax = window.innerWidth - 120
+})
+
+function girarCarro() {
+    if (giros < 4) {
+        carro.style.transform += "rotate(90deg)";
+        giros++;
+        setTimeout(girarCarro, 30);
+    }
+}
+
+
     
