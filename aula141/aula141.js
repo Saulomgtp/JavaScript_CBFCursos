@@ -1,3 +1,5 @@
 import { Login } from "./login.js";
 
-Login.login("123", "321");
+Login.login(null, null);
+
+addEventListener

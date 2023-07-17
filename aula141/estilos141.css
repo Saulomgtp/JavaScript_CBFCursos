@@ -4,7 +4,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
-.fundoLogin {
+/* .fundoLogin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
     align-items: stretch;
     width: 50%;
     box-sizing: inherit;
-}
+}S
 .elementosLogin {
     display: flex;
     justify-content: center;
@@ -80,4 +80,4 @@
     padding: 5px;
     background-color: #fff;
     border-radius: 5px;
-}
+} */
